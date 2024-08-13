@@ -1,0 +1,19 @@
+body {
+    background-color: #eedabfff;
+    margin: 0;
+}
+.stripe1{
+    height: 100px;
+    background-color: #7b3200ff;
+}
+.stripe2{
+    height: 30px;
+    background-color: #eb5e16ff;
+}
+.stripe3{
+    height: 30px;
+    background-color: #f08a26ff;
+}
+.title{
+    color: white;
+}
