@@ -1,22 +1,43 @@
+@font-face{
+    font-family: Audiowide;
+    src: url(fonts/Audiowide-Regular.ttf);
+}
+
 body {
     background-color: #eedabfff;
     margin: 0;
 }
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
 .stripe1{
-    height: 100px;
+    align-items: center;
     background-color: #7b3200ff;
+    display: flex;
+    flex: 1 1 100px;
+    justify-content: center;
 }
 .stripe2{
-    height: 30px;
     background-color: #eb5e16ff;
+    flex: 1 1 30px;
 }
 .stripe3{
-    height: 30px;
     background-color: #f08a26ff;
+    flex: 1 1 30px;
 }
+
+.title{
+    color: white;
+    font-family: 'Audiowide';
+    font-size: 2.5em;
+}
+
 #record{
     height: 500px;
-    width: auto;
     margin-top: 80px;
     margin-left: 80px;
+    width: auto;
 }
