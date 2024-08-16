@@ -8,6 +8,13 @@ body {
     margin: 0;
 }
 
+p {
+    font-family: 'Audiowide';
+    font-size: 2em;
+    text-align: center;
+    color: #7b3200ff;
+}
+
 .header{
     display: flex;
     flex-direction: column;
@@ -38,6 +45,51 @@ body {
 .content{
     display: flex;
     justify-content: space-around;
+}
+
+.input-boxes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 200px;
+    gap: 20%;
+    flex: 1 1 100px;
+}
+
+.input-boxes input {
+    width: 80%;
+    height: 12%;
+    font-family: 'Audiowide';
+    font-size: 2em;
+    text-align: center;
+    color: #7b3200ff;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #f08a26ff;
+
+}
+
+input::placeholder{
+    font-size: 1em;
+    text-align: center;
+    color: #7b3200ff;
+}
+
+.input-boxes button {
+    font-family: 'Audiowide';
+    font-size: 2em;
+    text-align: center;
+    color: #7b3200ff;
+    background-color: #eedabfff;
+    border-color: #eedabfff;
+    border-style: solid;
+}
+
+button:hover {
+    color: #f08a26ff;
+    cursor: pointer;
 }
 
 #record{
