@@ -39,7 +39,7 @@ p {
 .title{
     color: white;
     font-family: 'Audiowide';
-    font-size: 2.5em;
+    font-size: 3vw;
 }
 
 .content{
@@ -51,7 +51,6 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 20px;
     margin-right: 20px;
     margin-top: 200px;
     gap: 20%;
@@ -62,7 +61,7 @@ p {
     width: 80%;
     height: 12%;
     font-family: 'Audiowide';
-    font-size: 2em;
+    font-size: 2vw;
     text-align: center;
     color: #7b3200ff;
     border-style: solid;
@@ -72,14 +71,14 @@ p {
 }
 
 input::placeholder{
-    font-size: 1em;
+    font-size: 2vw;
     text-align: center;
     color: #7b3200ff;
 }
 
 .input-boxes button {
     font-family: 'Audiowide';
-    font-size: 2em;
+    font-size: 2vw;
     text-align: center;
     color: #7b3200ff;
     background-color: #eedabfff;
@@ -92,9 +91,15 @@ button:hover {
     cursor: pointer;
 }
 
-#record{
+#record {
     height: 500px;
     margin-top: 80px;
     margin-left: 80px;
     width: auto;
+}
+
+.svg {
+    align-items: center;
+    display: flex;
+    width: 70%
 }
