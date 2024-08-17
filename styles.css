@@ -77,6 +77,10 @@ input::placeholder{
     color: rgb(0, 0, 0);
 }
 
+input:focus::placeholder{
+    opacity: 0;
+}
+
 .input-boxes button {
     font-family: 'Audiowide';
     font-size: 2vw;
