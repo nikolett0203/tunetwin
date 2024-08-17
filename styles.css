@@ -81,6 +81,7 @@ input:focus::placeholder{
     opacity: 0;
 }
 
+
 .input-boxes button {
     font-family: 'Audiowide';
     font-size: 2vw;
