@@ -24,16 +24,16 @@ p {
     align-items: center;
     background-color: #7b3200ff;
     display: flex;
-    flex: 1 1 100px;
+    flex: 1 1 4vw;
     justify-content: center;
 }
 .stripe2{
     background-color: #eb5e16ff;
-    flex: 1 1 30px;
+    flex: 1 1 2vw;
 }
 .stripe3{
     background-color: #f08a26ff;
-    flex: 1 1 30px;
+    flex: 1 1 2vw;
 }
 
 .title{
@@ -51,19 +51,20 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-right: 20px;
-    margin-top: 200px;
-    gap: 20%;
+    margin-right: 40px;
+    margin-left: -10px;
+    margin-top: 12vw;
+    gap: 15%;
     flex: 1 1 100px;
 }
 
 .input-boxes input {
     width: 80%;
-    height: 12%;
+    height: 5vw;
     font-family: 'Audiowide';
     font-size: 2vw;
     text-align: center;
-    color: #7b3200ff;
+    color: rgb(0, 0, 0);
     border-style: solid;
     border-width: 4px;
     border-color: #f08a26ff;
@@ -73,7 +74,7 @@ p {
 input::placeholder{
     font-size: 2vw;
     text-align: center;
-    color: #7b3200ff;
+    color: rgb(0, 0, 0);
 }
 
 .input-boxes button {
@@ -84,6 +85,7 @@ input::placeholder{
     background-color: #eedabfff;
     border-color: #eedabfff;
     border-style: solid;
+    margin-top: -2vw;
 }
 
 button:hover {
@@ -92,14 +94,15 @@ button:hover {
 }
 
 #record {
-    height: 500px;
-    margin-top: 80px;
-    margin-left: 80px;
-    width: auto;
+    height: 75%;
+    margin-top: 0vw;
+    margin-left: 40px;
+    width: 100%;
 }
 
 .svg {
-    align-items: center;
     display: flex;
-    width: 70%
+    width: 50%;
+    align-items: center;
+
 }
