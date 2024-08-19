@@ -86,7 +86,7 @@ input:focus::placeholder{
     font-family: 'Audiowide';
     font-size: 2vw;
     text-align: center;
-    color: #7b3200ff;
+    color: #000000;
     background-color: #eedabfff;
     border-color: #eedabfff;
     border-style: solid;

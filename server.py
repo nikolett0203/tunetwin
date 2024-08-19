@@ -2,10 +2,12 @@
 
 # Import flask class so we can use it
 # Flask is a framework for building web apps, i.e. a toolbox for building websites
-from flask import Flask, redirect, render_template, request, url_for
+from flask import Flask, flash, redirect, render_template, request, url_for
 
 # creates an instance of the class flask, calls it app
 app = Flask(__name__)
+
+app.secret_key = 'b#K@d+f6Qw!ZpT4x2V9&0mNlXrS$yC3'
 
 @app.route('/')
 # create function that executes when user visits the url
@@ -16,6 +18,7 @@ def home_page():
 def find_twin():
     song = request.form.get('song')
     artist = request.form.get('artist')
+
     return f"Finding tunes similar to {song} by {artist}"
 
 @app.route("/<word>")
