@@ -1,11 +1,11 @@
 @font-face{
     font-family: 'SloopScript';
-    src: url(static/fonts/Sloop-ScriptThree.ttf);
+    src: url(fonts/Sloop-ScriptThree.ttf);
 }
 
 @font-face {
     font-family: 'Seasons';
-    src: url(static/fonts/Fontspring-DEMO-theseasons-reg.otf);
+    src: url(fonts/Fontspring-DEMO-theseasons-reg.otf);
 }
 
 body{
@@ -132,3 +132,5 @@ button:hover {
     width: 45%;
     align-items: center;
 }
+
+/* ----- */

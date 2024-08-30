@@ -19,24 +19,23 @@ def home_page():
 
 @app.route('/find-twin', methods=['POST'])
 def find_twin():
-
     song = request.form.get('song')
     artist = request.form.get('artist')
 
     token = spotify.get_token()
     search_results = spotify.search_for_song(token, song, artist)
 
-    if search_results is None:
-        pass
-    else:
-        track_id = search_results["id"]
-        recommendations = spotify.get_recs(token, track_id)
-        if recommendations is None:
-            pass
-        else:
-            tracks = recommendations.get('tracks', [])     
+    tracks = []
 
-    return f"Finding tunes similar to {song} by {artist}"
+    if search_results:
+        track_id = search_results.get("id")
+        recommendations = spotify.get_recs(token, seed_tracks=track_id)
+
+        if recommendations:
+            tracks = recommendations.get('tracks', [])  # This should now only contain 10 tracks
+
+    return render_template('find-twin.html', tracks=tracks)
+
 
 
 
