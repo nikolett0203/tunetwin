@@ -1,0 +1,205 @@
+.carousel {
+    width: 100%;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: center; 
+}
+
+.carousel-container {
+    width: 100%;
+    display: flex;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.carousel-item {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.carousel-item.index-1 {
+    left: 10%;
+    opacity: .4;
+    width: 200px;
+    height: 200px;
+}
+
+
+.carousel-item.index-2{
+    left: 17.5%;
+    width: 300px;
+    opacity: 0.8;
+    height: 300px;
+    z-index: 1;
+}
+
+.carousel-item.index-3 {
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+    height: 400px;
+    width: 400px;
+    opacity: 1;
+    left: 27.5%;
+    z-index: 2;
+
+}
+
+.carousel-item.index-4 {
+    left: 57.5%;
+    height: 300px;
+    opacity: 0.8;
+    width: 300px;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.carousel-item.index-5 {
+    left: 70%;
+    opacity: .4;
+    width: 200px;
+    height: 200px;
+    transform: translateX(-100%);
+}
+
+.carousel-item img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    height: 100px;
+}
+
+.carousel-controls button {
+    background: none;
+    border: none;
+    color: #e4ddb9;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 50px;
+    padding: 0 12px;
+    text-transform: capitalize;
+}
+
+.carousel-controls-button:focus {
+    outline: none;
+}
+
+.carousel-controls-previous{
+    position: relative;
+}
+
+.carousel-controls-previous::before{
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    left: -30px;
+    padding: 10px;
+    position: absolute;
+    top: 25%;
+    transform: rotate(135deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 5px;
+}
+
+.carousel-controls-previous:hover::before{
+    left:-40%;
+}
+
+.carousel-controls-next{
+    position: relative;
+}
+
+.carousel-controls-next::before{
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    right: -30px;
+    padding: 10px;
+    position: absolute;
+    top: 45%;
+    transform: rotate(-45deg) translateY(-50%);
+    transition: right 0.15s ease-in-out;
+    width: 5px;
+}
+
+.carousel-controls-next:hover:before{
+    right: -40px;
+}
+
+.carousel-nav{
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.carousel-nav li{
+    background: #ccc;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 16px;
+    width: 10px;
+}
+
+.carousel-nav li.carousel-item-selected{
+    background: #555;
+}
+
+.track-info {
+    font-family: 'Seasons';
+    position: absolute;
+    margin-top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.track-info p {
+    font-family: 'Seasons';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #e4ddb9;
+    font-size: 10px;
+}
+
+
+.controls button:hover {
+    transform: scale(1.2);
+}

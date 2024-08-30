@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='carousel.css') }}">
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-inner">
+            {% for track in tracks %}
+                <div class="carousel-item">
+                    <img src="{{ track['album']['images'][0]['url'] }}" alt="{{ track['name'] }}">
+                    <div class="track-info">
+                        <p>{{ track['name'] }}</p>
+                        <p>by {{ track['artists'][0]['name'] }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="carousel-controls"></div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='carousel.js') }}"></script>
+{% endblock %}
