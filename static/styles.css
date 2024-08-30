@@ -1,19 +1,25 @@
 @font-face{
-    font-family: Audiowide;
-    src: url(fonts/Audiowide-Regular.ttf);
+    font-family: 'SloopScript';
+    src: url(static/fonts/Sloop-ScriptThree.ttf);
 }
 
-body {
-    background-color: #eedabfff;
+@font-face {
+    font-family: 'Seasons';
+    src: url(static/fonts/Fontspring-DEMO-theseasons-reg.otf);
+}
+
+body{
+    background: #253043;
     margin: 0;
 }
 
 p {
-    font-family: 'Audiowide';
-    font-size: 2em;
+    font-family: 'SloopScript';
+    font-size: 3.5vw;
     text-align: center;
-    color: #7b3200ff;
+    color: #e4ddb9;
 }
+
 
 .header{
     display: flex;
@@ -22,24 +28,20 @@ p {
 
 .stripe1{
     align-items: center;
-    background-color: #7b3200ff;
+    background-color: #0f141c56;
     display: flex;
-    flex: 1 1 4vw;
+    flex: 1 1 1vw;
+    height: 11.3vw;
     justify-content: center;
 }
-.stripe2{
-    background-color: #eb5e16ff;
-    flex: 1 1 2vw;
-}
-.stripe3{
-    background-color: #f08a26ff;
-    flex: 1 1 2vw;
-}
+
 
 .title{
-    color: white;
-    font-family: 'Audiowide';
-    font-size: 3vw;
+    color: #e4ddb9;
+    font-family: 'SloopScript';
+    font-size: 10vw;
+    font-weight: 20;
+    text-shadow: -7px 1px 0px #394965c3;
 }
 
 .content{
@@ -47,67 +49,86 @@ p {
     justify-content: space-around;
 }
 
+.form-container{
+    width: 55%;
+}
+
+.text-by p{
+    height: 2.3vw;
+    margin-top: 1vw;
+}
+
 .input-boxes{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-right: 40px;
-    margin-left: -10px;
-    margin-top: 12vw;
-    gap: 15%;
+    margin-left: -30px;
+    margin-top: 6vw;
     flex: 1 1 100px;
+    margin-bottom: 7vw;
 }
 
 .input-boxes input {
-    width: 80%;
-    height: 5vw;
-    font-family: 'Audiowide';
-    font-size: 2vw;
+    width: 90%;
+    height: 6vw;
+    font-family: 'Seasons';
+    font-size: 4vw;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #e4ddb9;
     border-style: solid;
-    border-width: 4px;
-    border-color: #f08a26ff;
-
+    border-width: 0px;
+    background-color: #0f141c20;
+    font-weight: 20;
+    transition: 0.2s ease;
+    border-radius: 1vw;
 }
 
 input::placeholder{
-    font-size: 2vw;
+    font-size: 3.5vw;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color:#e4ddb9;
+    font-weight: 20;
+    transition: 0.2s ease;
 }
 
 input:focus::placeholder{
     opacity: 0;
+    transition: 0.2s ease;
+    background-color: #0f141c20;
 }
 
 
-.input-boxes button {
-    font-family: 'Audiowide';
-    font-size: 2vw;
+.form-container button {
+    font-family: 'SloopScript';
+    font-size: 6vw;
     text-align: center;
-    color: #000000;
-    background-color: #eedabfff;
-    border-color: #eedabfff;
+    color: #e4ddb9;
+    background-color: #253043;
+    border-color: #253043;
     border-style: solid;
+    font-weight: 20;
+    text-shadow: -7px 1px 0px #394965c3;
     margin-top: -2vw;
+    margin-left: -12vw;
+    transition: 0.1s ease;
 }
 
 button:hover {
-    color: #f08a26ff;
     cursor: pointer;
+    font-size: 6.05vw;
+    transition: 0.1s ease;
+    text-shadow: -7px 1px 0px #51678dcc;
 }
 
-#record {
-    height: 75%;
+#mic {
     margin-top: 0vw;
-    margin-left: 40px;
-    width: 100%;
+    margin-left: 0px;
+    width: 80%;
 }
 
-.svg {
+.image {
     display: flex;
-    width: 50%;
+    width: 45%;
     align-items: center;
-
 }
