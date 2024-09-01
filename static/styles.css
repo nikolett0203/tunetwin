@@ -9,7 +9,7 @@
 }
 
 body{
-    background: #253043;
+    background: #394965;
     margin: 0;
 }
 
@@ -27,12 +27,12 @@ p {
 }
 
 .stripe1{
-    align-items: center;
     background-color: #0f141c56;
     display: flex;
     flex: 1 1 1vw;
-    height: 11.3vw;
-    justify-content: center;
+    height: 10.3vw;
+    justify-content: left;
+    align-items: center;
 }
 
 
@@ -41,7 +41,13 @@ p {
     font-family: 'SloopScript';
     font-size: 10vw;
     font-weight: 20;
-    text-shadow: -7px 1px 0px #394965c3;
+    text-shadow: -7px 1px 0px #394965;
+}
+
+.logo{
+    font-size: 10vw;
+    padding-right: 25vw;
+    padding-left: 4vw;
 }
 
 .content{
@@ -104,8 +110,8 @@ input:focus::placeholder{
     font-size: 6vw;
     text-align: center;
     color: #e4ddb9;
-    background-color: #253043;
-    border-color: #253043;
+    background-color: #394965;
+    border-color: #394965;
     border-style: solid;
     font-weight: 20;
     text-shadow: -7px 1px 0px #394965c3;
