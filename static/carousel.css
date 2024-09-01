@@ -32,49 +32,54 @@
     background-position: center;
     align-items: center;
     justify-content: center;
-
+    border-width: 0.3vw; 
+    border-style: solid;
+    border-color: #e4ddb9;
 }
 
 
 .carousel-item.index-1 {
-    left: 10%;
-    opacity: .4;
-    width: 200px;
-    height: auto;
+    left: 3%;
+    opacity: 1;
+    width: 15vw;
+    height: 15vw;
+    margin-top: 8vw;
 }
 
 
 .carousel-item.index-2{
-    left: 17.5%;
-    width: 300px;
-    height: auto;
-    opacity: 0.8;
+    left: 13.5%;
+    width: 20vw;
+    height: 20vw;
+    opacity: 1;
     z-index: 1;
+    margin-top: 4vw;
 }
 
 .carousel-item.index-3 {
     box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
-    height: 400px;
-    width: auto;
+    height: 25vw;
+    width: 25vw;
     opacity: 1;
     left: 27.5%;
     z-index: 2;
-
 }
 
 .carousel-item.index-4 {
-    left: 57.5%;
-    height: 300px;
-    opacity: 0.8;
-    width: 300px;
+    left: 47.5%;
+    width: 20vw;
+    height: 20vw;
+    opacity: 1;
     z-index: 1;
+    margin-top: 4vw;
 }
 
 .carousel-item.index-5 {
-    left: 70%;
-    opacity: .4;
-    width: 200px;
-    height: 200px;
+    left: 63%;
+    opacity: 1;
+    width: 15vw;
+    height: 15vw;
+    margin-top: 8vw;
 }
 
 .carousel-item img {
@@ -177,21 +182,22 @@
 .track-info {
     font-family: 'Seasons';
     position: absolute;
-    margin-top: 50%;
+    margin-top: 2vw;
     left: 0;
     right: 0;
-    text-align: center;
+    
 }
 
 .track-info p {
     font-family: 'Seasons';
-    position: absolute;
-    bottom: 10px;
     left: 0;
     right: 0;
-    text-align: center;
     color: #e4ddb9;
-    font-size: 10px;
+    font-size: 1.2vw;
+    gap: 1vw;
+    text-align: center;
+    padding-left:2vw;
+    padding-right:2vw;
 }
 
 

@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const classIndex = (index + 1) % totalItems + 1; 
                 item.classList.add(`index-${classIndex}`);
                 
-                item.style.transform = `rotateY(${index * (360 / totalItems)}deg)`;
+                //item.style.transform = `rotateY(${index * (360 / totalItems)}deg)`;
             });
 
-            this.galleryContainer.style.transform = `rotateY(${-currentIndex * (360 / totalItems)}deg)`;
+            //this.galleryContainer.style.transform = `rotateY(${-currentIndex * (360 / totalItems)}deg)`;
         }
 
         setCurrentState(direction) {
