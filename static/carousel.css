@@ -5,6 +5,7 @@
     margin-right: 10%;
     align-items: center;
     justify-content: center; 
+    margin-top: 2vw;
 }
 
 .carousel-container {
@@ -83,7 +84,7 @@
 }
 
 .carousel-item img {
-    border-radius: 15px;
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -92,8 +93,7 @@
 .carousel-controls {
     display: flex;
     justify-content: center;
-    margin: 25px 0;
-    height: 100px;
+    height: 2vw;
 }
 
 .carousel-controls button {
@@ -102,9 +102,6 @@
     color: #e4ddb9;
     font-size: 30px;
     cursor: pointer;
-    margin: 0 50px;
-    padding: 0 12px;
-    text-transform: capitalize;
 }
 
 .carousel-controls-button:focus {
@@ -116,7 +113,7 @@
 }
 
 .carousel-controls-previous::before{
-    border: solid #000;
+    border: solid #e4ddb9;
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
@@ -139,7 +136,7 @@
 }
 
 .carousel-controls-next::before{
-    border: solid #000;
+    border: solid #e4ddb9;
     border-width: 0 5px 5px 0;
     content: '';
     display: inline-block;
@@ -157,27 +154,7 @@
     right: -40px;
 }
 
-.carousel-nav{
-    bottom: -15px;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    width: 100%;
-}
 
-.carousel-nav li{
-    background: #ccc;
-    border-radius: 50%;
-    height: 10px;
-    margin: 0 16px;
-    width: 10px;
-}
-
-.carousel-nav li.carousel-item-selected{
-    background: #555;
-}
 
 .track-info {
     font-family: 'Seasons';
