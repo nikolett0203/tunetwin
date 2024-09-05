@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const carouselContainer = document.querySelector('.carousel-container');
     const carouselControlsContainer = document.querySelector('.carousel-controls');
-    const carouselControls = ['previous', 'next'];
+    const carouselControls = ['⏮', '⏭'];
     const carouselItems = Array.from(document.querySelectorAll('.carousel-item'));
     const totalItems = carouselItems.length;
     let currentIndex = 0;
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setControls() {
             this.galleryControls.forEach(control => {
                 const button = document.createElement('button');
-                button.className = `carousel-controls-${control}`;
+                button.className = control === '⏮' ? 'carousel-controls-previous' : 'carousel-controls-next';
                 button.innerText = control;
                 carouselControlsContainer.appendChild(button);
             });

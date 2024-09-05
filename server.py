@@ -26,16 +26,22 @@ def find_twin():
     search_results = spotify.search_for_song(token, song, artist)
 
     tracks = []
+    song_cover_url = ""
+    song_name = song
+    song_artist = artist
 
     if search_results:
         track_id = search_results.get("id")
+        song_cover_url = search_results.get("album", {}).get("images", [{}])[0].get("url", "")
+        song_name = search_results.get("name", song_name)  # Use the song name from search results if available
+        song_artist = search_results.get("artists", [{}])[0].get("name", song_artist)  # Use the artist name from search results if available
         recommendations = spotify.get_recs(token, seed_tracks=track_id)
 
         if recommendations:
             tracks = recommendations.get('tracks', [])  # This should now only contain 10 tracks
 
-    return render_template('find-twin.html', tracks=tracks)
 
+    return render_template('find-twin.html', tracks=tracks, song_cover_url=song_cover_url, song_name=song_name, song_artist=song_artist)
 
 
 

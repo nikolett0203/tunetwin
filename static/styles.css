@@ -17,7 +17,7 @@ p {
     font-family: 'SloopScript';
     font-size: 3.5vw;
     text-align: center;
-    color: #e4ddb9;
+    color: #e7e0c2;
 }
 
 
@@ -37,17 +37,20 @@ p {
 
 
 .title{
-    color: #e4ddb9;
+    color: #e7e0c2;
     font-family: 'SloopScript';
     font-size: 10vw;
     font-weight: 20;
     text-shadow: -7px 1px 0px #394965;
+    padding-left: 27vw;
 }
 
 .logo{
     font-size: 10vw;
-    padding-right: 27vw;
     padding-left: 4vw;
+}
+.logo:hover{
+    cursor:pointer;
 }
 
 .content{
@@ -81,7 +84,7 @@ p {
     font-family: 'Seasons';
     font-size: 4vw;
     text-align: center;
-    color: #e4ddb9;
+    color: #e7e0c2;
     border-style: solid;
     border-width: 0px;
     background-color: #0f141c20;
@@ -93,7 +96,7 @@ p {
 input::placeholder{
     font-size: 3.5vw;
     text-align: center;
-    color:#e4ddb9;
+    color:#e7e0c2;
     font-weight: 20;
     transition: 0.2s ease;
 }
@@ -109,7 +112,7 @@ input:focus::placeholder{
     font-family: 'SloopScript';
     font-size: 6vw;
     text-align: center;
-    color: #e4ddb9;
+    color: #e7e0c2;
     background-color: #394965;
     border-color: #394965;
     border-style: solid;

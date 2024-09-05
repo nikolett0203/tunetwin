@@ -2,6 +2,19 @@
 
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename='carousel.css') }}">
+<div class="song-display">
+    <p class="tune-phrase-top">Your tune:<p>
+    {% if song_name and song_artist and song_cover_url %}
+        <div class="song-info">
+            <img src="{{ song_cover_url }}" alt="{{ song_name }}" class="song-cover">
+            <p class="song-title">{{ song_name }}</p>
+            <p class="song-artist">by {{ song_artist }}</p>
+        </div>
+    {% else %}
+        <p>No song details available.</p>
+    {% endif %}
+    <p class="tune-phrase-bottom">Is twinning with...</p>
+</div>
 <div class="carousel">
     <div class="carousel-container">
         <div class="carousel-inner">
