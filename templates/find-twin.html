@@ -13,7 +13,7 @@
     {% else %}
         <p>No song details available.</p>
     {% endif %}
-    <p class="tune-phrase-bottom">Is twinning with...</p>
+    <p class="tune-phrase-bottom" id="twinning-section">Is twinning with...</p>
 </div>
 <div class="carousel">
     <div class="carousel-container">
@@ -22,8 +22,8 @@
                 <div class="carousel-item">
                     <img src="{{ track['album']['images'][0]['url'] }}" alt="{{ track['name'] }}">
                     <div class="track-info">
-                        <p>{{ track['name'] }}</p>
-                        <p>by {{ track['artists'][0]['name'] }}</p>
+                        <p class="track-name">{{ track['name'] }}</p>  <!-- Added specific class for track name -->
+                        <p class="track-artist">by {{ track['artists'][0]['name'] }}</p>  <!-- Added specific class for artist -->
                     </div>
                 </div>
             {% endfor %}

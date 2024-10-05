@@ -42,16 +42,16 @@
 .carousel-item.index-1 {
     left: 3%;
     opacity: 1;
-    width: 15vw;
-    height: 15vw;
+    width: 13vw;
+    height: 13vw;
     margin-top: 8vw;
 }
 
 
 .carousel-item.index-2{
     left: 13.5%;
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
     opacity: 1;
     z-index: 1;
     margin-top: 4vw;
@@ -59,8 +59,8 @@
 
 .carousel-item.index-3 {
     box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
-    height: 25vw;
-    width: 25vw;
+    height: 23vw;
+    width: 23vw;
     opacity: 1;
     left: 27.5%;
     z-index: 2;
@@ -68,8 +68,8 @@
 
 .carousel-item.index-4 {
     left: 47.5%;
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
     opacity: 1;
     z-index: 1;
     margin-top: 4vw;
@@ -78,8 +78,8 @@
 .carousel-item.index-5 {
     left: 63%;
     opacity: 1;
-    width: 15vw;
-    height: 15vw;
+    width: 13vw;
+    height: 13vw;
     margin-top: 8vw;
 }
 
@@ -153,18 +153,73 @@
     left: 0;
     right: 0;
     color: #e7e0c2;
-    font-size: 1.8vw;
+    font-size: 2vw;
     margin-top: -0.2vw;
     text-align: center;
     padding-left:2vw;
     padding-right:2vw;
 }
 
+.carousel-item.index-1 .track-info .track-name {
+    font-size: 1vw;
+    margin-top: -1vw;
+}
+
+.carousel-item.index-1 .track-info .track-artist {
+    font-size: 0.4vw;
+}
+
+.carousel-item.index-2 .track-info .track-name {
+    font-size: 1.5vw;
+    margin-top: -0.5vw;
+}
+
+.carousel-item.index-2 .track-info .track-artist {
+    font-size: 0.9vw;
+}
+
+.carousel-item.index-3 .track-info .track-artist {
+    font-size: 1.4vw;
+}
+
+.carousel-item.index-4 .track-info .track-name {
+    font-size: 1.5vw;
+    margin-top: -0.5vw;
+}
+
+.carousel-item.index-4 .track-info .track-artist {
+    font-size: 0.9vw;
+}
+
+.carousel-item.index-5 .track-info .track-name {
+    font-size: 1vw;
+    margin-top: -1vw;
+}
+
+.carousel-item.index-5 .track-info .track-artist {
+    font-size: 0.4vw;
+}
+
+.track-name {
+    /* Styles for track name */
+    font-family: 'Mirage';
+    font-size: 1.7vw; /* Adjust as needed */
+    color: #e7e0c2;
+    margin-bottom: 5px; /* Space before the artist */
+}
+
+.track-artist {
+    /* Styles for track artist */
+    font-family: 'SloopScript'; /* Different font */
+    font-size: 1.5vw; /* Adjusted font size */
+    color: #e7e0c2;
+    margin-top: 0; /* Adjust spacing as needed */
+}
 
 
 .song-display {
     text-align: center;
-    margin-top: -1vw;
+    margin-top: -1.5vw;
 }
 
 .tune-phrase-top{
@@ -211,3 +266,4 @@
     color: #e7e0c2; 
     margin-top: -1vw;
 }
+

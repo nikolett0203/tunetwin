@@ -63,4 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     exampleCarousel.setControls();
     exampleCarousel.useControls();
+
+    
+    setTimeout(() => scrollToSection('twinning-section'), 1000); 
+
+    function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+    
 });
