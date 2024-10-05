@@ -27,7 +27,7 @@
 .carousel-item {
     position: absolute;
     opacity: 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.35s ease-in-out;
     z-index: 0;
     border-radius: 1vw;
     background-position: center;
@@ -36,8 +36,9 @@
     border-width: 0.3vw; 
     border-style: solid;
     border-color: #e7e0c2;
+    width: 1vw; 
+    height: 1vw; 
 }
-
 
 .carousel-item.index-1 {
     left: 3%;
@@ -96,25 +97,13 @@
     margin-top: 2vw; 
 }
 
-.carousel-item {
-    position: absolute;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    z-index: 0;
-    border-radius: 1vw;
-    background-position: center;
-    align-items: center;
-    justify-content: center;
-    border-width: 0.3vw;
-    border-style: solid;
-    border-color: #e7e0c2;
-}
+
 
 .carousel-controls {
     display: flex;
     justify-content: center; 
     position: absolute;
-    bottom: -45vw; 
+    bottom: -42vw; 
     left: -10vw;
     width: 100%;  
 }
@@ -153,7 +142,7 @@
     left: 0;
     right: 0;
     color: #e7e0c2;
-    font-size: 2vw;
+    font-size: 0vw;
     margin-top: -0.2vw;
     text-align: center;
     padding-left:2vw;
@@ -176,6 +165,10 @@
 
 .carousel-item.index-2 .track-info .track-artist {
     font-size: 0.9vw;
+}
+
+.carousel-item.index-3 .track-info .track-name {
+    font-size: 2vw;
 }
 
 .carousel-item.index-3 .track-info .track-artist {
