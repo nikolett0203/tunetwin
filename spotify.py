@@ -12,6 +12,8 @@ client_secret = os.getenv("CLIENT_SECRET")
 print(client_id, client_secret)
 
 def get_token():
+    print(client_id)
+    print(client_secret)
     auth_string = client_id + ":" + client_secret
     auth_bytes = auth_string.encode("utf-8")
     auth_base64 = auth_base64 = base64.b64encode(auth_bytes).decode("utf-8")

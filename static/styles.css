@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: 'Seasons';
-    src: url(fonts/Fontspring-DEMO-theseasons-reg.otf);
+    font-family: 'Mirage';
+    src: url(fonts/Mirage.otf);
 }
 
 body{
@@ -30,7 +30,7 @@ p {
     background-color: #0f141c56;
     display: flex;
     flex: 1 1 1vw;
-    height: 10.3vw;
+    height: 8.4vw;
     justify-content: left;
     align-items: center;
 }
@@ -39,14 +39,14 @@ p {
 .title{
     color: #e7e0c2;
     font-family: 'SloopScript';
-    font-size: 10vw;
+    font-size: 8vw;
     font-weight: 20;
     text-shadow: -7px 1px 0px #394965;
-    padding-left: 27vw;
+    padding-left: 30vw;
 }
 
 .logo{
-    font-size: 10vw;
+    font-size: 8vw;
     padding-left: 4vw;
 }
 .logo:hover{
@@ -81,7 +81,7 @@ p {
 .input-boxes input {
     width: 90%;
     height: 6vw;
-    font-family: 'Seasons';
+    font-family: 'Mirage';
     font-size: 4vw;
     text-align: center;
     color: #e7e0c2;

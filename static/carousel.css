@@ -140,7 +140,7 @@
 
 
 .track-info {
-    font-family: 'Seasons';
+    font-family: 'Mirage';
     position: absolute;
     margin-top: 2vw;
     left: 0;
@@ -149,7 +149,7 @@
 }
 
 .track-info p {
-    font-family: 'Seasons';
+    font-family: 'Mirage';
     left: 0;
     right: 0;
     color: #e7e0c2;
@@ -164,19 +164,19 @@
 
 .song-display {
     text-align: center;
-    margin-top: -4vw;
+    margin-top: -1vw;
 }
 
 .tune-phrase-top{
-    font-family: 'Seasons';
+    font-family: 'Mirage';
     color: #e7e0c2;
-    font-size: 5vw;
+    font-size: 3.5vw;
     font-weight: thin;
 }
 .tune-phrase-bottom{
-    font-family: 'Seasons';
+    font-family: 'Mirage';
     color: #e7e0c2;
-    font-size: 5vw;
+    font-size: 3.5vw;
     font-weight: thin;
     margin-top: -0.5vw;
 }
@@ -188,18 +188,18 @@
 
 .song-cover {
     border-radius: 1vw;
-    width: 18vw; 
-    height: 18vw; 
+    width: 20vw; 
+    height: 20vw; 
     object-fit: cover;
-    margin-top: -3.8vw;
+    margin-top: -1.8vw;
     border-width: 0.3vw; 
     border-style: solid;
     border-color: #e7e0c2;
 }
 
 .song-title {
-    font-family: 'Seasons';
-    font-size: 3vw;
+    font-family: 'Mirage';
+    font-size: 2vw;
     font-weight: thin;
     color: #e7e0c2;
     margin-top: 10px;
@@ -207,7 +207,7 @@
 
 .song-artist {
     font-family: 'SloopScript';
-    font-size: 2vw;
+    font-size: 3vw;
     color: #e7e0c2; 
-    margin-top: -2vw;
+    margin-top: -1vw;
 }
