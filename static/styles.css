@@ -48,7 +48,21 @@ p {
 .logo{
     font-size: 8vw;
     padding-left: 4vw;
+    outline: none;
+    border: none;
+    text-decoration: none;
 }
+
+a {
+    outline: none; 
+    text-decoration: none;
+}
+
+a:focus, a:active{
+    outline: none;
+    box-shadow: none;
+}
+
 .logo:hover{
     cursor:pointer;
 }
