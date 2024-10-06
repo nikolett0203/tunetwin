@@ -15,7 +15,6 @@
     position: relative;
     align-items: center;
     justify-content: center;
-
 }
 
 .carousel-inner {
@@ -94,18 +93,12 @@
 .carousel-controls {
     display: flex;
     justify-content: center; 
-    margin-top: 2vw; 
-}
-
-
-
-.carousel-controls {
-    display: flex;
-    justify-content: center; 
     position: absolute;
-    bottom: -42vw; 
-    left: -10vw;
+    left: -11vw;
     width: 100%;  
+    margin-bottom: -88vw; 
+    padding-bottom: 10vw;
+
 }
 
 .carousel-controls button {
@@ -118,8 +111,6 @@
     padding: 0.5vw 2vw;
     text-transform: capitalize;
     transition: transform 0.2s ease;
-    
-
 }
 
 .carousel-controls button:hover {
@@ -192,23 +183,6 @@
 .carousel-item.index-5 .track-info .track-artist {
     font-size: 0.4vw;
 }
-
-.track-name {
-    /* Styles for track name */
-    font-family: 'Mirage';
-    font-size: 1.7vw; /* Adjust as needed */
-    color: #e7e0c2;
-    margin-bottom: 5px; /* Space before the artist */
-}
-
-.track-artist {
-    /* Styles for track artist */
-    font-family: 'SloopScript'; /* Different font */
-    font-size: 1.5vw; /* Adjusted font size */
-    color: #e7e0c2;
-    margin-top: 0; /* Adjust spacing as needed */
-}
-
 
 .song-display {
     text-align: center;
